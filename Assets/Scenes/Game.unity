@@ -5494,6 +5494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5cfd146b6858a64f84f79058560e3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coin: 0
+  _money: 0
 --- !u!1 &792505274
 GameObject:
   m_ObjectHideFlags: 0
@@ -6683,7 +6685,7 @@ GameObject:
   - component: {fileID: 899344530}
   - component: {fileID: 899344529}
   m_Layer: 0
-  m_Name: Background
+  m_Name: Background_Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8794,7 +8796,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -10475,7 +10476,7 @@ GameObject:
   - component: {fileID: 1506371784}
   - component: {fileID: 1506371783}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: ExitButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

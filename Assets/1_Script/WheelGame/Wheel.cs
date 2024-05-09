@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Wheel : MonoBehaviour
 {
     private RectTransform _wheelRectTransform;
-    public int _winingCount;
+    private int _winingCount;
 
     
     [SerializeField] private int _slotCount;
@@ -29,7 +29,7 @@ public class Wheel : MonoBehaviour
 
         var seq = DOTween.Sequence();
 
-        //_winingCount = Random.Range(0, _slotCount);
+        _winingCount = Random.Range(0, _slotCount);
 
         Vector3 winingRotate = new Vector3(0,0,(-360/_slotCount) * _winingCount);
         seq.AppendInterval(.2f);

@@ -44,14 +44,6 @@ public class WheelManager : MonoBehaviour
         ZoneCount = 1;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.M)) {
-            ZoneCount++;
-            Debug.Log(ZoneCount);
-        }
-    }
 
     public void StartNewZone()
     {

@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         OnGameSuccess += SuccessGame;
-        OnGameFail += FailGame;
+        OnGameFail += ResetPrefs;
     }
 
     private void SuccessGame()
@@ -29,9 +29,11 @@ public class GameManager : MonoBehaviour
 
         PlayerPrefs.SetInt("Money", EconomyManager.instance.Money + money);
         PlayerPrefs.SetInt("Coin", EconomyManager.instance.Coin + coin);
+
+        ResetPrefs();
     }
 
-    private void FailGame()
+    private void ResetPrefs()
     {
         PlayerPrefs.SetInt("TempCoin", 0);
         PlayerPrefs.SetInt("TempMoney", 0);

@@ -53,11 +53,5 @@ public class RewardImage : MonoBehaviour
     {
         _saveName = prefName;
         canSave = true;
-        //var reward = _tempNewReward + RewardCount;
-        //Debug.Log(reward);
-        //PlayerPrefs.SetInt(prefName, reward);
-
-        //var x = PlayerPrefs.GetInt(prefName);
-        //Debug.Log(x);
     }
 }

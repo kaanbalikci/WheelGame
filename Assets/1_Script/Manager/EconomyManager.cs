@@ -55,14 +55,7 @@ public class EconomyManager : MonoBehaviour
         DOTween.To(() => Money, x => Money = x, newMoney, .6f).SetEase(Ease.Linear);
         DOTween.To(() => Coin, x => Coin = x, newCoin, .6f).SetEase(Ease.Linear);
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            Money += 10;
-            Coin += 20;
-        }
-    }
+
     public bool CheckCoin(int needCoin)
     {
         return Coin - needCoin <= 0 ? false : true;
